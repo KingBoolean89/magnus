@@ -1,0 +1,180 @@
+@-webkit-keyframes fadeInUp {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+p {
+    opacity: 0;
+    -webkit-animation: fadeInUp 1s ease-in-out 0s forwards;
+    animation: fadeInUp 1s ease-in-out 0s forwards;
+}
+
+h3 {
+    opacity: 0;
+    -webkit-animation: fadeInUp 1s ease-in-out 0s forwards;
+    animation: fadeInUp 1s ease-in-out 0s forwards;
+}
+
+div {
+    opacity: 0;
+    -webkit-animation: fadeInUp 1s ease-in-out 0s forwards;
+    animation: fadeInUp 1s ease-in-out 0s forwards;
+}
+
+p.first {
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+p.second {
+    -webkit-animation-delay: 3s;
+    animation-delay: 3s;
+}
+
+p.third {
+    -webkit-animation-delay: 5s;
+    animation-delay: 5s;
+}
+
+p.fourth {
+    -webkit-animation-delay: 7s;
+    animation-delay: 7s;
+}
+
+p.fifth {
+    -webkit-animation-delay: 9s;
+    animation-delay: 9s;
+}
+
+p.sixth {
+    -webkit-animation-delay: 11s;
+    animation-delay: 11s;
+}
+.seventh {
+    -webkit-animation-delay: 13s;
+    animation-delay: 13s;
+}
+
+p.eigth {
+    -webkit-animation-delay: 15s;
+    animation-delay: 15s;
+}
+
+p.nineth {
+    -webkit-animation-delay: 17s;
+    animation-delay: 17s;
+}
+
+p.tenth {
+    -webkit-animation-delay: 19s;
+    animation-delay: 19s;
+}
+
+p.eleventh {
+    -webkit-animation-delay: 21s;
+    animation-delay: 21s;
+}
+
+p.twelvth {
+    -webkit-animation-delay: 23s;
+    animation-delay: 23s;
+}
+
+div.thirtenth {
+    -webkit-animation-delay: 25s;
+    animation-delay: 25s;
+}
+/* now add general css for page */
+body {
+    background: #fff;
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 200;
+    line-height: 1.6 em;
+}
+a{
+    text-decoration: none;
+}
+
+p {
+    margin: 10px 0;
+    display: inline-block;
+    font-weight: 300;
+}
+
+.emphasis {
+    color: rgba(203, 96, 179, 0.7);
+    -webkit-text-stroke: 1px #fff;
+    ;
+}
+
+.author {
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    padding: 13px 15px;
+    border-radius: 15px;
+    outline: none;
+}
+
+.author button:hover {
+    background-color: #fff;
+    color: #333;
+}
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+section.wrapper{
+     display:grid;
+     grid-template-columns:  1fr;
+     grid-gap: 20px;
+      background: url("images/space.mp4") no-repeat center center/cover;
+}
+
+
+.bg-dark {
+    background: rgba(0,0,0,0.9);
+    color: #f4f4f4;
+}
+
+footer {
+    display:grid;
+    grid-template-columns: 1fr;
+    padding: 2.2rem;
+    line-height:2.0;
+}
+
+footer p {
+    margin: 0;
+}

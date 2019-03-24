@@ -31,7 +31,7 @@
 }
 
 .slide .content h1 {
-    margin-bottom: 10px;
+    margin-bottom: 0;
 }
 
 .slide.current .content {
@@ -130,11 +130,11 @@
 }
 
 #home h1 {
-    font-size: 3.5rem;
+    font-size: 4.5rem;
 }
 
 #home h2 {
-    font-size: 2rem;
+    font-size: 3rem;
     color: #aaa;
 }
 
@@ -161,10 +161,10 @@
 
 @media(max-width: 500px) {
   #home h1 {
-        font-size: 2.5rem;
+        font-size: 3.5rem;
     }
 
   #home h2 {
-        font-size: 1.5rem;
+        font-size: 2.5rem;
     }
 }

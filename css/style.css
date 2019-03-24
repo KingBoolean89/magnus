@@ -42,6 +42,11 @@ section#about h1{
    cursive;
 }
 
+#home h2{
+    font-family: 'Dancing Script',
+    cursive;
+}
+
 section#about {
      color:rgba(203, 96, 179, 0.7);
     background: url("../images/image2.jpg") no-repeat center center/cover;
@@ -75,6 +80,13 @@ section#contact h1{
     grid-template-columns: repeat(2, 1fr);
     
 }
+
+.grid{
+    display: block;
+    grid-template-columns: repeat(2, 1fr);
+     font-family: 'Dancing Script' cursive;
+     grid-gap:0;
+}
 .grid-2 {
     display: grid;
      background: rgba(0, 0, 0, 0.7);
@@ -97,6 +109,21 @@ object{
     overflow-y: scroll;
     scroll-behavior: smooth;
    
+}
+
+.author{
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    padding: 13px 15px;
+    border-radius: 15px;
+    outline: none;
+}
+
+.author button:hover{
+    background-color: #fff;
+    color: #333;
 }
 
 .lead{
@@ -232,11 +259,11 @@ section h1 h2 {
     @media only screen and (max-width: 580px) {
         .contact-form {
             left: 3%;
-            margin-right: 3%;
+            margin-right: 6%;
             width: 88%;
             margin-left: 0;
             padding-left: 3%;
-            padding-right: 3%;
+            padding-right: 6%;
         }
     }
 
@@ -254,11 +281,21 @@ section h1 h2 {
             height:100%;
             grid-gap:0;
         }
+        .services{
+            height:960px;
+        }
+       .hide{
+            display: none;
+        }
         .services-wrapper{
              height:100vh;
              overflow: hidden;
-             width:50%;
+             width:80%;
+             padding-bottom:2rem;
 
+        }
+        .logo {
+            width: 70%;
         }
         object {
             height: 250px;
@@ -269,6 +306,36 @@ section h1 h2 {
 
        
     }
+
+     @media(max-width:380px) {
+
+        .services-wrapper {
+            height: 70vh;
+            overflow: hidden;
+            width: 70%;
+
+        }
+
+        section#home {
+            height: 50vh;
+            padding-bottom:3rem; 
+        }
+
+        section#about {
+            height: 70vh;
+        }
+
+        .navbar {
+            display: none;
+        }
+         .logo {
+             width: 50%;
+         }
+
+         .slide{
+             padding-top:1rem;
+         }
+     }
 
     @media(max-width:420px){
 
@@ -281,6 +348,7 @@ section h1 h2 {
 
         section#home{
             height: 50vh;
+            padding-bottom:3rem;
         }
 
         section#about {
@@ -288,6 +356,9 @@ section h1 h2 {
         }
         .navbar{
             display:none;
+        }
+        .logo{
+            width:50%;
         }
     }
     
